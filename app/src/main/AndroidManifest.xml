@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="id.sch.smkn13bdg.adhi.brilinkadminarkan">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".SplashScreenActivity"
+            android:noHistory="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/Splashscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ScanCardActivity" />
+        <activity android:name=".modulbtmhadiah.DetailHadiahActivity" />
+
+        <meta-data
+            android:name="com.google.android.gms.vision.DEPENDENCIES"
+            android:value="barcode" />
+
+        <activity android:name=".modulbtmhadiah.EditHadiahActivity" />
+        <activity android:name=".PrintActivity" />
+        <activity android:name=".DeviceListActivity" />
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".LoginActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".modulnavpengguna.PenggunaDetailActivity" />
+        <activity android:name=".modulnavpengguna.PenggunaListActivity" />
+        <activity android:name=".modulnavpengguna.PenggunaTransaksiActivity" />
+        <activity android:name=".modulnavpengguna.PenggunaHadiahActivity" />
+        <activity android:name=".modulnavtarif.TarifEditActivity" />
+        <activity android:name=".modulnavbank.BankEditActivity" />
+        <activity android:name=".modulnavbanner.BannerEditActivity" />
+        <activity android:name=".ScanTextActivity" />
+        <activity android:name=".modulbtmtransaksi.TransaksiScanTextActivity" />
+        <activity android:name=".modulbtmtransaksi.ListBankTransaksiActivity" />
+        <activity android:name=".modulbtmtransaksi.JenisTransaksiActivity" />
+        <activity android:name=".modulbtmtransaksi.TransaksiActivity"></activity>
+    </application>
+
+</manifest>

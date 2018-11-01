@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginBottom="3dp">
+    <RelativeLayout
+        android:layout_marginTop="4dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.android.volley.toolbox.NetworkImageView
+            android:id="@+id/listklaimfoto"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="29dp" />
+
+        <TextView
+            android:id="@+id/listklaimnama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="11dp"
+            android:layout_marginTop="8dp"
+            android:layout_toEndOf="@+id/listklaimfoto"
+            android:text="Nama"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:textColor="@color/colorPrimary"/>
+
+        <TextView
+            android:id="@+id/listklaimokartu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/listklaimnama"
+            android:layout_below="@+id/listklaimnama"
+            android:text="nokartu"
+            android:textColor="@color/colorAccent"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/listklaimtanggal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/listklaimokartu"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="25dp"
+            android:text="tanggal"
+            android:textColor="@color/colorAccent" />
+
+        <TextView
+            android:id="@+id/listklaimadmin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/listklaimtanggal"
+            android:layout_centerVertical="true"
+            android:text="admin" />
+
+        <TextView
+            android:id="@+id/listklaimhadiah"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/listklaimokartu"
+            android:layout_below="@+id/listklaimokartu"
+            android:text="hadiah"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:textColor="@color/colorAccent" />
+
+        <TextView
+            android:id="@+id/listklaimstatushadiah"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/listklaimadmin"
+            android:layout_alignTop="@+id/listklaimhadiah"
+            android:text="status" />
+    </RelativeLayout>
+    <View
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorAccent"/>
+</LinearLayout>

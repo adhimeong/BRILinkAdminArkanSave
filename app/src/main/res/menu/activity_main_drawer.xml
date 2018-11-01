@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_pengguna"
+            android:icon="@drawable/ic_group_black_24dp"
+            android:title="Pengguna" />
+        <item
+            android:id="@+id/nav_pemenang"
+            android:icon="@drawable/ic_cake_black_24dp"
+            android:title="Pemenang" />
+        <item
+            android:id="@+id/nav_pengumuman"
+            android:icon="@drawable/ic_menu_send"
+            android:title="Pengumuman" />
+        <item
+            android:id="@+id/nav_laporan"
+            android:icon="@drawable/ic_insert_chart_black_24dp"
+            android:title="Laporan" />
+    </group>
+
+    <item android:title="Pengaturan">
+        <menu>
+            <item
+                android:id="@+id/nav_tarif"
+                android:icon="@drawable/ic_monetization_on_black_24dp"
+                android:title="Tarif" />
+
+            <item
+                android:id="@+id/nav_hadiah"
+                android:icon="@drawable/ic_cake_black_24dp"
+                android:title="Hadiah" />
+
+            <item
+                android:id="@+id/nav_periode"
+                android:icon="@drawable/ic_rotate_90_degrees_ccw_black_24dp"
+                android:title="Periode" />
+
+            <item
+                android:id="@+id/nav_bank"
+                android:icon="@drawable/ic_account_balance_black_24dp"
+                android:title="Kode Bank" />
+            <item
+                android:id="@+id/nav_banner"
+                android:icon="@drawable/ic_menu_gallery"
+                android:title="Banner" />
+        </menu>
+    </item>
+    <item android:title="Akun">
+        <menu>
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@drawable/ic_account_circle_black_24dp"
+                android:title="Log Out" />
+        </menu>
+    </item>
+</menu>

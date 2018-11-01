@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginBottom="3dp">
+    <RelativeLayout
+        android:layout_marginTop="4dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.android.volley.toolbox.NetworkImageView
+            android:id="@+id/listpengggunafoto"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="29dp" />
+
+        <TextView
+            android:id="@+id/listpenggunanama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="11dp"
+            android:layout_marginTop="8dp"
+            android:layout_toEndOf="@+id/listpengggunafoto"
+            android:text="Nama"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary"/>
+
+        <TextView
+            android:id="@+id/listpenggunanokartu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/listpenggunanama"
+            android:layout_below="@+id/listpenggunanama"
+            android:text="nokartu"
+            android:textColor="@color/colorAccent"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/listpenggunakontak"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/listpenggunanokartu"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="25dp"
+            android:text="kontak"
+            android:textColor="@color/colorAccent" />
+
+        <TextView
+            android:id="@+id/listpenggunaalamat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/listpenggunaemail"
+            android:layout_below="@+id/listpenggunaemail"
+            android:text="alamat" />
+
+        <TextView
+            android:id="@+id/listpenggunaemail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/listpenggunanokartu"
+            android:layout_below="@+id/listpenggunanokartu"
+            android:text="email"
+            android:textColor="@color/colorAccent" />
+    </RelativeLayout>
+    <View
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorAccent"/>
+</LinearLayout>

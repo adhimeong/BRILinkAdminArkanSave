@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="id.sch.smkn13bdg.adhi.brilinkadminarkan.modulnavpengguna.PenggunaDetailActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp">
+
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:orientation="horizontal"
+                 android:padding="10dp">
+
+                 <com.android.volley.toolbox.NetworkImageView
+                     android:id="@+id/profilprevimage"
+                     android:layout_width="120dp"
+                     android:layout_height="120dp"
+                     android:layout_gravity="center" />
+
+                 <LinearLayout
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:orientation="vertical"
+                     android:padding="10dp">
+
+                     <TextView
+                         android:id="@+id/penggunadetailnokartu"
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:layout_marginBottom="5dp"
+                         android:text="NO KARTU"
+                         android:textColor="@color/colorAccent"
+                         android:textSize="18dp"
+                         android:textStyle="bold"
+                         android:layout_marginLeft="15dp"/>
+
+                     <TextView
+                         android:id="@+id/txtprofilnama"
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:layout_marginBottom="5dp"
+                         android:text="Nama"
+                         android:textColor="@color/colorAccent"
+                         android:textSize="14dp"
+                         android:layout_marginLeft="15dp"/>
+
+                     <TextView
+                         android:id="@+id/txtprofilemail"
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:layout_marginBottom="5dp"
+                         android:text="Email"
+                         android:textColor="@color/colorAccent"
+                         android:textSize="12dp"
+                         android:layout_marginLeft="15dp"/>
+
+                     <TextView
+                         android:id="@+id/txtprofilkontak"
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:layout_marginBottom="5dp"
+                         android:text="Kontak"
+                         android:textColor="@color/colorAccent"
+                         android:textSize="12dp"
+                         android:layout_marginLeft="15dp"/>
+
+                     <TextView
+                         android:id="@+id/txtprofilalamat"
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:text="Alamat"
+                         android:textColor="@color/colorAccent"
+                         android:textSize="12dp"
+                         android:layout_marginLeft="15dp"/>
+                 </LinearLayout>
+             </LinearLayout>
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="5dp"
+                android:paddingTop="2dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:text="TRANSAKSI : "
+                    android:textColor="@color/colorAccent"
+                    android:textSize="12dp"
+                    android:textStyle="bold"
+                    android:layout_weight="1"/>
+
+                <TextView
+                    android:id="@+id/penggunadetailjmlhtransaksi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:text="0"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="12dp"
+                    android:layout_weight="1"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:text="POINT : "
+                    android:textColor="@color/colorAccent"
+                    android:textSize="12dp"
+                    android:textAlignment="center"
+                    android:layout_weight="1"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/penggunadetailjmlhpoint"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:text="0"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="12dp"
+                    android:layout_weight="1"/>
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <TabHost
+            android:id="@+id/tabHost"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TabWidget
+                    android:id="@android:id/tabs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <FrameLayout
+                    android:id="@android:id/tabcontent"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:id="@+id/tab1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:layout_alignParentBottom="true">
+
+                        <ListView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:id="@+id/listview01"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/tab2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:layout_alignParentBottom="true">
+
+                        <ListView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:id="@+id/listview02"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/tab3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:layout_alignParentBottom="true">
+
+                        <ListView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:id="@+id/listview03"/>
+                    </LinearLayout>
+                </FrameLayout>
+            </LinearLayout>
+        </TabHost>
+    </LinearLayout>
+    <com.robertlevonyan.views.customfloatingactionbutton.FloatingLayout
+        android:id="@+id/floating_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:fabMenuGravity = "end|bottom"
+        app:fabMenuStyle="popUp"
+        android:layout_gravity="end|bottom">
+
+        <com.robertlevonyan.views.customfloatingactionbutton.FloatingActionButton
+            android:id="@+id/fab1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fabIcon="@drawable/ic_add_black_24dp"
+            app:fabColor="@color/birutua" />
+
+        <com.robertlevonyan.views.customfloatingactionbutton.FloatingActionButton
+            android:id="@+id/fab2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fabColor="#0b7bc1"
+            app:fabIcon="@drawable/ic_attach_money_color_24dp"
+            app:fabSizes="normal" />
+
+        <com.robertlevonyan.views.customfloatingactionbutton.FloatingActionButton
+            android:id="@+id/fab3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fabColor="#ff9c10"
+            app:fabIcon="@drawable/ic_star_border_white_24dp"
+            app:fabSizes="normal" />
+
+        <com.robertlevonyan.views.customfloatingactionbutton.FloatingActionButton
+            android:id="@+id/fab4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fabColor="#ea201c"
+            app:fabIcon="@drawable/ic_card_giftcard_color_24dp"
+            app:fabSizes="normal" />
+
+    </com.robertlevonyan.views.customfloatingactionbutton.FloatingLayout>
+
+</android.support.constraint.ConstraintLayout>

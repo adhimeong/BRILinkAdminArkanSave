@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_transaksi"
+        android:icon="@drawable/ic_attach_money_black_24dp"
+        android:title="" />
+
+    <item
+        android:id="@+id/navigation_point"
+        android:icon="@drawable/ic_stars_black_24dp"
+        android:title="" />
+
+    <item
+        android:id="@+id/navigation_hadiah"
+        android:icon="@drawable/ic_cake_black_24dp"
+        android:title="" />
+</menu>

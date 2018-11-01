@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="id.sch.smkn13bdg.adhi.brilinkadminarkan.modulnavtarif.TarifEditActivity">
+
+    <android.support.v7.widget.CardView
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/abu"
+                    android:textSize="20dp"
+                    android:text="Tarif "
+                    android:textAlignment="center"
+                    android:layout_marginBottom="20dp"
+                    android:layout_weight="1"/>
+
+                <TextView
+                    android:id="@+id/tarifjenis"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="20dp"
+                    android:text="Jenis Bank"
+                    android:textAlignment="center"
+                    android:layout_marginBottom="20dp"
+                    android:layout_weight="1"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="30dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/abu"
+                    android:textSize="20dp"
+                    android:text="Batas Bawah : "
+                    android:layout_marginBottom="20dp"
+                    android:layout_weight="1"/>
+
+                <faranjit.currency.edittext.CurrencyEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tarifbatasbawah"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:inputType="numberDecimal"
+                    app:locale="id"
+                    app:showSymbol="false"
+                    android:layout_weight="1"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/abu"
+                    android:textSize="20dp"
+                    android:text="Batas Atas : "
+                    android:layout_marginBottom="20dp"
+                    android:layout_weight="1"/>
+
+                <faranjit.currency.edittext.CurrencyEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tarifbatasatas"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:inputType="numberDecimal"
+                    app:locale="id"
+                    app:showSymbol="false"
+                    android:layout_weight="1"/>
+
+            </LinearLayout>
+            <RadioGroup
+                android:id="@+id/tarifjenisradiogroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="invisible"
+                android:layout_marginTop="20dp">
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/radiosesama"
+                    android:text="SESAMA BRI"
+                    android:layout_weight="1"
+                    android:textColor="@color/colorAccent"/>
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/radioantar"
+                    android:text="ANTAR BANK"
+                    android:layout_weight="1"
+                    android:textColor="@color/colorPrimary"/>
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/abu"
+                android:textSize="16dp"
+                android:text="Tarif Baru"
+                android:textAlignment="center"
+                android:layout_marginBottom="20dp"/>
+
+            <faranjit.currency.edittext.CurrencyEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tariftarif"
+                android:hint="Tarif"
+                android:textColor="@color/colorAccent"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                android:textAlignment="center"
+                android:inputType="numberDecimal"
+                app:locale="id"
+                app:showSymbol="false"/>
+
+            <Button
+                android:id="@+id/tarifbtnhapus"
+                android:layout_marginTop="15dp"
+                style="@style/Widget.AppCompat.Button.ButtonBar.AlertDialog"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="HAPUS"
+                android:layout_gravity="center"
+                android:visibility="invisible"/>
+
+            <Button
+                android:id="@+id/tarifbtnproses"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="UPDATE TARIF"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+</android.support.constraint.ConstraintLayout>

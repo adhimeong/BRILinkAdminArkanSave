@@ -1,0 +1,60 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="id.sch.smkn13bdg.adhi.brilinkadminarkan.modulbtmtransaksi.ListTransaksiFragment">
+
+    <!-- Menerapkan TabLayout dan ViewPager -->
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tab_layout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        app:tabMode="fixed"
+        app:tabSelectedTextColor="#FFFFFF"
+        app:tabTextColor="#813502"
+        app:tabIndicatorColor="#fcb101">
+
+        <android.support.design.widget.TabItem
+            android:id="@+id/tab_Transaksi_antrian"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="ANTRIAN" />
+
+        <android.support.design.widget.TabItem
+            android:id="@+id/tab_Transaksi_keep_me"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="SORTIR" />
+
+        <android.support.design.widget.TabItem
+            android:id="@+id/tab_transaksi_gagal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="PENDING" />
+
+        <android.support.design.widget.TabItem
+            android:id="@+id/tab_transaksi_batal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="BATAL" />
+
+        <android.support.design.widget.TabItem
+            android:id="@+id/tab_transaksi_berhasil"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="BERHASIL" />
+
+    </android.support.design.widget.TabLayout>
+
+    <android.support.v4.view.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/pager2"
+        android:layout_below="@id/tab_layout2">
+
+    </android.support.v4.view.ViewPager>
+
+</RelativeLayout>

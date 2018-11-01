@@ -1,0 +1,76 @@
+<resources>
+    <string name="app_name">Admin BRILink</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string-array name="banner">
+        <item>BANNER 1</item>
+        <item>BANNER 2</item>
+        <item>BANNER 3</item>
+    </string-array>
+    <string-array name="jenis_transaksi">
+        <item>JENIS TRANSAKSI</item>
+        <item>STOR TUNAI</item>
+        <item>TARIK TUNAI</item>
+        <item>TRANSFER</item>
+    </string-array>
+    <string-array name="bank">
+        <item>BANK TUJUAN</item>
+        <item>BRI</item>
+        <item>BNI</item>
+        <item>MANDIRI</item>
+        <item>BCA</item>
+        <item>BJB</item>
+        <item>MUAMALAT</item>
+        <item>LAINNYA</item>
+    </string-array>
+    <string-array name="minggu">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+    <string-array name="tanggal">
+        <item>1_bulan</item>
+        <item>01</item>
+        <item>02</item>
+        <item>03</item>
+        <item>04</item>
+        <item>05</item>
+        <item>06</item>
+        <item>07</item>
+        <item>08</item>
+        <item>09</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+        <item>21</item>
+        <item>22</item>
+        <item>23</item>
+        <item>24</item>
+        <item>25</item>
+        <item>26</item>
+        <item>27</item>
+        <item>28</item>
+        <item>29</item>
+        <item>30</item>
+        <item>31</item>
+    </string-array>
+    <string name="title_activity_main2">Main2Activity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+</resources>

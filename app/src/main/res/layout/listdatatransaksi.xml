@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/listidhadiah"
+        android:layout_alignParentStart="true"
+        android:padding="14dp"
+        android:layout_marginTop="6dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="8dp"
+            >
+
+            <TextView
+                android:id="@+id/listtransnokartu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/listtransbank"
+                android:layout_below="@+id/listtranstanggal"
+                android:text="nokartu"
+                android:textColor="@color/colorPrimary"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/listtransjenis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/listtransid"
+                android:layout_marginStart="68dp"
+                android:layout_toEndOf="@+id/listtransid"
+                android:text="jenis"
+                android:textColor="@color/place_autocomplete_prediction_secondary_text"
+                android:textSize="12sp"
+                />
+
+            <TextView
+                android:id="@+id/listtransbank"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/listtransnokartu"
+                android:layout_marginStart="16dp"
+                android:layout_toEndOf="@+id/listtrangambar"
+                android:text="Bank"
+                android:textColor="@color/place_autocomplete_prediction_secondary_text"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/listtransid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/listtransnokartu"
+                android:layout_alignBottom="@+id/listtransnokartu"
+                android:layout_centerHorizontal="true"
+                android:text="0"
+                android:visibility="invisible" />
+
+            <TextView
+                android:id="@+id/listtransrek"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/listtransbank"
+                android:layout_below="@+id/listtransbank"
+                android:text="rek"
+                android:textColor="@color/place_autocomplete_prediction_secondary_text"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/listtransnominal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/listtransjenis"
+                android:layout_alignTop="@+id/listtransrek"
+                android:text="0"
+                android:textColor="@color/colorAccent"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/listtrangambar"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="17dp"
+                app:srcCompat="@drawable/ic_attach_money_black_24dp" />
+
+            <TextView
+                android:id="@+id/listtranstanggal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignStart="@+id/listtransnokartu"
+                android:text="tanggal" />
+
+            <TextView
+                android:id="@+id/listtransadmin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignStart="@+id/listtransjenis"
+                android:text="admin"
+                android:textColor="@color/colorAccent"/>
+
+            <TextView
+                android:id="@+id/listtranspenerima"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/listtransrek"
+                android:layout_below="@+id/listtransrek"
+                android:text="penerima"
+                android:textColor="@color/colorAccent"
+                android:textSize="12sp"
+                android:layout_marginBottom="10dp"/>
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>
+

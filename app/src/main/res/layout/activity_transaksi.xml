@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="id.sch.smkn13bdg.adhi.brilinkadminarkan.modulbtmtransaksi.TransaksiActivity">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:padding="40dp">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:paddingTop="10dp">
+
+                <EditText
+                    android:id="@+id/edittransaksinokartu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Nomor Kartu"
+                    android:inputType="text"
+                    android:textColor="@color/colorAccent"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginTop="15dp"
+                    android:textStyle="bold"/>
+
+                <EditText
+                    android:id="@+id/edittransaksitujuan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="No Rekening Tujuan"
+                    android:inputType="number"
+                    android:textColor="@color/colorAccent"/>
+
+                <faranjit.currency.edittext.CurrencyEditText
+                    android:id="@+id/edittransaksinominal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Nominal"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorAccent"
+                    android:inputType="numberDecimal"
+                    app:locale="id"
+                    app:showSymbol="false" />
+
+                <EditText
+                    android:id="@+id/edittransaksipenerima"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Penerima"
+                    android:inputType="text"
+                    android:textColor="@color/colorAccent"/>
+
+                <EditText
+                    android:id="@+id/edittransaksibank"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Bank"
+                    android:inputType="text"
+                    android:textColor="@color/colorAccent"/>
+
+                <TextView
+                    android:id="@+id/txttransaksitxtadm"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="BIAYA ADMINISTRASI"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="15dp"
+                    android:textStyle="bold"
+                    />
+
+                <TextView
+                    android:id="@+id/txttransaksitarif"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Rp. 0 "
+                    android:textColor="@color/colorAccent"
+                    android:textSize="15dp"
+                    />
+
+                <Button
+                    android:id="@+id/btntransaksiscan"
+                    android:layout_marginTop="5dp"
+                    style="@style/Widget.AppCompat.Button.ButtonBar.AlertDialog"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Scan Kartu" />
+
+                <Button
+                    android:id="@+id/btntransaksiloadtarif"
+                    style="@style/Widget.AppCompat.Button.ButtonBar.AlertDialog"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="CEK TARIF" />
+
+                <Button
+                    android:id="@+id/btntransasiproses"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="PROSES" />
+
+            </LinearLayout>
+        </ScrollView>
+    </android.support.v7.widget.CardView>
+
+</android.support.constraint.ConstraintLayout>

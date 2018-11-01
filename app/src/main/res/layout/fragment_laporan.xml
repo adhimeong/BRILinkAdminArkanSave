@@ -1,0 +1,49 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="id.sch.smkn13bdg.adhi.brilinkadminarkan.modulbtmlaporan.LaporanFragment">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tab_layout3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorAccent"
+            app:tabMode="fixed"
+            app:tabSelectedTextColor="#FFFFFF"
+            app:tabTextColor="#813502"
+            app:tabIndicatorColor="#fcb101">
+
+            <android.support.design.widget.TabItem
+                android:id="@+id/tab_laporan_hari"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="HARI INI" />
+
+            <android.support.design.widget.TabItem
+                android:id="@+id/tab_laporan_minggu"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="MINGGUAN" />
+
+            <android.support.design.widget.TabItem
+                android:id="@+id/tab_laporan_tahunan"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="TAHUN" />
+
+        </android.support.design.widget.TabLayout>
+
+        <android.support.v4.view.ViewPager
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/pager3"
+            android:layout_below="@id/tab_layout2">
+
+        </android.support.v4.view.ViewPager>
+    </LinearLayout>
+</RelativeLayout>

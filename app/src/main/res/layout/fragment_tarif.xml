@@ -1,0 +1,41 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="id.sch.smkn13bdg.adhi.brilinkadminarkan.modulnavtarif.TarifFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        app:tabMode="fixed"
+        app:tabSelectedTextColor="@color/putih"
+        app:tabTextColor="@color/coklat"
+        app:tabIndicatorColor="@color/kunyit">
+
+        <android.support.design.widget.TabItem
+            android:id="@+id/tab_tarifsesama"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="SESAMA BRI" />
+
+
+        <android.support.design.widget.TabItem
+            android:id="@+id/tab_tarifantarbank"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="ANTAR BANK" />
+    </android.support.design.widget.TabLayout>
+
+    <android.support.v4.view.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/pager"
+        android:layout_below="@id/tab_layout">
+
+    </android.support.v4.view.ViewPager>
+
+</RelativeLayout>
